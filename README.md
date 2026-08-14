@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ateliê Di Petta — Landing Page
 
 Site one-page focado em conversão (ligação/WhatsApp) para o Ateliê Di Petta, gerado a partir dos dados do Google Meu Negócio.
@@ -64,3 +65,8 @@ Todo o conteúdo (textos, número de WhatsApp, endereço, cores) está no único
 `HERO`, `DIFERENCIAIS`, `SOBRE`, `SERVIÇOS`, `PROVA SOCIAL`, `CTA FINAL`, `FOOTER`.
 
 Basta abrir o arquivo em qualquer editor de texto (ou direto no GitHub, clicando no lápis ✏️ do arquivo) e editar o texto entre as tags HTML.
+=======
+# AtelieDipetta
+Website de artesanato focado em peças de crochet
+# AtelieDipetta
+>>>>>>> 4be0646aefbbf1b2024b8020061126796423b617
