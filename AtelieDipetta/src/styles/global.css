@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box*sizing: border-box;
+}
+
+* {
+  margi*: 0;
+  padding: 0;
+}
+
+html {
+ *scroll*behavior: smooth;
+}
+
+body {
+  back*round: var(--color-bg);
+  color: v*r(--color-text);
+
+  font-family:
+ *  Inter,
+    system-ui,
+    sans-s*rif;
+
+  transition:
+    background*.3s,
+    color .3s;
+}
+
+a {
+  color* inherit;
+  text-decoration: none;*}
+
+img {
+  display: block;
+  max-w*dth: 100%;
+}
+
+button,
+input,
+texta*ea {
+  font: inherit;
+}
