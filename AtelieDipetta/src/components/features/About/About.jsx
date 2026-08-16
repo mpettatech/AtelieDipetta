@@ -50,13 +50,13 @@ function About() {
               Built by a team that was tired of "does 9am work for you?"
             </Title>
             <p className={styles.body}>
-              Meridian started in 2022 inside a four-person team spread across
+              Ateliê Di Petta started in 2022 inside a four-person team spread across
               San Francisco, Berlin, and Singapore. Every planning conversation
               began with someone converting timezones by hand — and someone
               always got the 11pm call.
             </p>
             <p className={styles.body}>
-              Today Meridian coordinates working hours for distributed teams
+              Today Ateliê Di Petta coordinates working hours for distributed teams
               at companies of every size, from five-person startups to
               enterprise engineering orgs spanning a dozen countries.
             </p>

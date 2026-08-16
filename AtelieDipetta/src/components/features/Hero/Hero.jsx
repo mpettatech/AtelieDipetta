@@ -53,7 +53,7 @@ function Hero() {
               One shared clock for teams spread <em>across every timezone</em>
             </h1>
             <p className={styles.body}>
-              Meridian finds the exact hours your whole team can meet, converts
+              Ateliê Di Petta finds the exact hours your whole team can meet, converts
               them into everyone's local time automatically, and keeps
               adjusting as people travel or daylight saving shifts.
             </p>
@@ -83,7 +83,7 @@ function Hero() {
               aria-label="Diagram showing four cities' working hours overlapping into one shared meeting window"
             >
               <defs>
-                <linearGradient id="meridianGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient id="Ateliê Di PettaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="var(--color-accent)" />
                   <stop offset="100%" stopColor="var(--color-secondary)" />
                 </linearGradient>

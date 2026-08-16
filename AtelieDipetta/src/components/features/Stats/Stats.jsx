@@ -6,7 +6,7 @@ import useOnScreen from "../../../hooks/useOnScreen";
 import { formatNumber, clamp } from "../../../utils/helpers";
 
 const STATS = [
-  { value: 1200, suffix: "+", label: "teams coordinating on Meridian" },
+  { value: 1200, suffix: "+", label: "teams coordinating on Ateliê Di Petta" },
   { value: 40000, suffix: "+", label: "working hours matched daily" },
   { value: 38, suffix: "", label: "countries represented" },
   { value: 92, suffix: "%", label: "reduction in scheduling back-and-forth" },

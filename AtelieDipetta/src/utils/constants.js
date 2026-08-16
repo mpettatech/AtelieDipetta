@@ -1,4 +1,4 @@
-export const SITE_NAME = "Meridian";
+export const SITE_NAME = "Ateliê Di Petta";
 
 export const NAV_LINKS = [
   { label: "Features", href: "#features" },
@@ -73,15 +73,15 @@ export const PRICING_TIERS = [
 export const FAQ_ITEMS = [
   {
     id: "faq-1",
-    question: "How does Meridian find overlapping hours?",
+    question: "How does Ateliê Di Petta find overlapping hours?",
     answer:
-      "Every teammate sets their working hours once. Meridian cross-references them live and highlights the windows where everyone is online, updating automatically for daylight saving shifts.",
+      "Every teammate sets their working hours once. Ateliê Di Petta cross-references them live and highlights the windows where everyone is online, updating automatically for daylight saving shifts.",
   },
   {
     id: "faq-2",
     question: "Does it work with our existing calendar?",
     answer:
-      "Yes. Meridian syncs one-way or two-way with Google Calendar and Outlook, so suggested meeting times can be booked without leaving your usual tools.",
+      "Yes. Ateliê Di Petta syncs one-way or two-way with Google Calendar and Outlook, so suggested meeting times can be booked without leaving your usual tools.",
   },
   {
     id: "faq-3",
@@ -93,6 +93,6 @@ export const FAQ_ITEMS = [
     id: "faq-4",
     question: "What happens when someone travels?",
     answer:
-      "Teammates can set a temporary timezone for travel. Meridian recalculates overlap for everyone else automatically and reverts once the trip ends.",
+      "Teammates can set a temporary timezone for travel. Ateliê Di Petta recalculates overlap for everyone else automatically and reverts once the trip ends.",
   },
 ];

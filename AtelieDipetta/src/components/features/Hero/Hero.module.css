@@ -68,7 +68,7 @@
   font-family: var(--font-mono);
 }
 
-/* ---------- Signature element: the meridian overlap arc ---------- */
+/* ---------- Signature element: the Ateliê Di Petta overlap arc ---------- */
 .arcWrap {
   position: relative;
   display: flex;
@@ -105,7 +105,7 @@
 }
 
 .arcFill {
-  stroke: url(#meridianGradient);
+  stroke: url(#Ateliê Di PettaGradient);
   stroke-width: 4;
   stroke-linecap: round;
   fill: none;

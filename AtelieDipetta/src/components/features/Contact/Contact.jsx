@@ -67,12 +67,12 @@ function Contact() {
             </Title>
             <p className={styles.infoBody}>
               Tell us about your team's timezones and we'll show you exactly
-              how Meridian would map your working hours — no generic demo,
+              how Ateliê Di Petta would map your working hours — no generic demo,
               just your data.
             </p>
             <div className={styles.contactRow}>
               <span className={styles.contactLabel}>Email</span>
-              <span className={styles.contactValue}>hello@meridian.app</span>
+              <span className={styles.contactValue}>hello@Ateliê Di Petta.app</span>
             </div>
             <div className={styles.contactRow}>
               <span className={styles.contactLabel}>Response time</span>

@@ -9,7 +9,7 @@ import styles from "./Title.module.css";
  * @example
  * <Title
  *   as="h2"
- *   eyebrow="Why Meridian"
+ *   eyebrow="Why Ateliê Di Petta"
  *   subtitle="Every teammate sees the same overlap, in their own local time."
  *   align="center"
  *   gradient

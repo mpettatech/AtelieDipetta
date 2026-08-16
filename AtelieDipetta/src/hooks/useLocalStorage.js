@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
  * @returns {[*, Function]} current value and a setter (same shape as useState)
  *
  * @example
- * const [theme, setTheme] = useLocalStorage("meridian-theme", "dark");
+ * const [theme, setTheme] = useLocalStorage("Ateliê Di Petta-theme", "dark");
  */
 function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => {

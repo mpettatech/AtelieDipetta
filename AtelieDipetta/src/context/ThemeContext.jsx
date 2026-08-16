@@ -15,7 +15,7 @@ export const ThemeContext = createContext(null);
  * </ThemeProvider>
  */
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useLocalStorage("meridian-theme", "dark");
+  const [theme, setTheme] = useLocalStorage("Ateliê Di Petta-theme", "dark");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);

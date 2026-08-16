@@ -20,17 +20,17 @@ const FEATURES = [
   {
     icon: "☀",
     title: "Daylight saving aware",
-    body: "Meridian tracks every region's DST rules, so a meeting that works in March still works after the clocks change.",
+    body: "Ateliê Di Petta tracks every region's DST rules, so a meeting that works in March still works after the clocks change.",
   },
   {
     icon: "✈",
     title: "Travel-friendly",
-    body: "Set a temporary timezone for a trip and Meridian quietly recalculates overlap for the rest of the team.",
+    body: "Set a temporary timezone for a trip and Ateliê Di Petta quietly recalculates overlap for the rest of the team.",
   },
   {
     icon: "◔",
     title: "Fair rotation",
-    body: "When there's no perfect overlap, Meridian suggests a rotating meeting time so the same region isn't always up at 6am.",
+    body: "When there's no perfect overlap, Ateliê Di Petta suggests a rotating meeting time so the same region isn't always up at 6am.",
   },
   {
     icon: "▤",

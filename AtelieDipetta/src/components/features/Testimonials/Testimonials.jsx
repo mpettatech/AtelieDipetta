@@ -13,7 +13,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "Meridian is the first tool that actually understands our team isn't just US and Europe — it handles Singapore and São Paulo just as well.",
+      "Ateliê Di Petta is the first tool that actually understands our team isn't just US and Europe — it handles Singapore and São Paulo just as well.",
     name: "Diego Ferreira",
     role: "Head of Remote Ops, Fenwick",
   },
