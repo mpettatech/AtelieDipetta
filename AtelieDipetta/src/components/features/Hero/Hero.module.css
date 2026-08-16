@@ -69,49 +69,16 @@
 }
 
 /* ---------- Signature element: the Ateliê Di Petta overlap arc ---------- */
-.arcWrap {
-  position: relative;
+.heroImageWrap {
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
-.arcCaption {
-  position: absolute;
-  bottom: -1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  color: var(--color-text-faint);
-  white-space: nowrap;
-}
-
-.cityLabel {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  fill: var(--color-text-muted);
-}
-
-.cityTime {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  fill: var(--color-text-faint);
-}
-
-.arcTrack {
-  stroke: var(--color-border);
-  stroke-width: 2;
-  fill: none;
-}
-
-.arcFill {
-  stroke: url(#Ateliê Di PettaGradient);
-  stroke-width: 4;
-  stroke-linecap: round;
-  fill: none;
-  animation: arc-sweep 1.4s var(--ease-out) both;
-}
-
-.overlapDot {
-  fill: var(--color-accent);
+.heroImage {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  object-fit: contain;
 }
