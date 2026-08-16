@@ -1,11 +1,11 @@
 export const SITE_NAME = "Ateliê Di Petta";
 
 export const NAV_LINKS = [
-  { label: "Features", href: "#features" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "Produtos", href: "#features" },
+  { label: "Parceirias", href: "#pricing" },
+  { label: "Feedbacks", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contato", href: "#contact" },
 ];
 
 export const SOCIAL_LINKS = [

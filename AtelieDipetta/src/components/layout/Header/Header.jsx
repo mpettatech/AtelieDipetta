@@ -54,7 +54,7 @@ function Header() {
             </button>
             <div className={styles.desktopOnly}>
               <Button size="sm" onClick={() => scrollToId("contact")}>
-                Book a demo
+                Fale conosco
               </Button>
             </div>
             <button

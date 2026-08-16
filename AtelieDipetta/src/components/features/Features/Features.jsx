@@ -69,10 +69,10 @@ function Features() {
       <Container size="xl">
         <div className={styles.header}>
           <Title
-            eyebrow="Why teams switch"
-            subtitle="Everything you need to schedule across timezones without the spreadsheet."
+            eyebrow="Pioneira na categoria"
+            subtitle="Quando o assunto é brincos de crochê, o Ateliê Di Petta é referência, por ser pioneira na categoria"
           >
-            Built for teams that never share an office
+            A expêriencia levou a aperfeiçoar a técnica e o design, tornando cada peça única e especial.
           </Title>
         </div>
         <div className={styles.grid}>
