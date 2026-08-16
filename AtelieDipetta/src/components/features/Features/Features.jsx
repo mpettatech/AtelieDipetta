@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Features.module.css";
 import Container from "../../ui/Container";
 import Section from "../../ui/Section";

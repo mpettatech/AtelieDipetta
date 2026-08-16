@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { createPortal } from "react-dom";
 import styles from "./Toast.module.css";
 import { AppContext } from "../../../context/AppContext";

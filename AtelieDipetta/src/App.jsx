@@ -1,3 +1,4 @@
+import React from "react";
 import { ThemeProvider } from "./context/ThemeContext";
 import { AppProvider } from "./context/AppContext";
 import ProgressBar from "./components/ui/ProgressBar";

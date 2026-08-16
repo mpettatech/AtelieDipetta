@@ -9,7 +9,7 @@ import Pricing from "../components/features/Pricing";
 import Testimonials from "../components/features/Testimonials";
 import FAQ from "../components/features/FAQ";
 import Contact from "../components/features/Contact";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 /**

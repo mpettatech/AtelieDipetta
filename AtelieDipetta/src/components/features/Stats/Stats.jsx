@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Stats.module.css";
 import Container from "../../ui/Container";
 import Section from "../../ui/Section";

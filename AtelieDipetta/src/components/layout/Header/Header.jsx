@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import styles from "./Header.module.css";
 import Container from "../../ui/Container";
 import Button from "../../ui/Button";

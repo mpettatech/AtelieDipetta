@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./FAQ.module.css";
 import Container from "../../ui/Container";
 import Section from "../../ui/Section";

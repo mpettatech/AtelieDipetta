@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Navigation.module.css";
 import { NAV_LINKS } from "../../../utils/constants";

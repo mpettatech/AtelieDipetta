@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./Footer.module.css";
 import Container from "../../ui/Container";
 import Input from "../../ui/Input";

@@ -1,4 +1,4 @@
-import { useContext, useId, useState } from "react";
+import React, { useContext, useId, useState } from "react";
 import styles from "./Contact.module.css";
 import Container from "../../ui/Container";
 import Section from "../../ui/Section";

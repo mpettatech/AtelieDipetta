@@ -1,4 +1,4 @@
-import { Children, cloneElement, isValidElement, useId, useState } from "react";
+import React, { Children, cloneElement, isValidElement, useId, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./Tooltip.module.css";
 

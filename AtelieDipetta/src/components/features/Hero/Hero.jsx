@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Hero.module.css";
 import Container from "../../ui/Container";
 import Button from "../../ui/Button";
