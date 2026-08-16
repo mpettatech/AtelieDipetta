@@ -1,76 +1,119 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Ateliê Di Petta — Landing Page
+# Meridian — Professional Website
 
-Site one-page focado em conversão (ligação/WhatsApp) para o Ateliê Di Petta, gerado a partir dos dados do Google Meu Negócio.
+Website profissional construído com **React 19**, **Vite** e **CSS Modules**,
+usando "Meridian" (um produto fictício de agendamento para times distribuídos
+em vários fusos horários) como conteúdo de exemplo.
 
-## ⚠️ O que foi preenchido automaticamente (revise antes de publicar)
+## 🚀 Rodando localmente
 
-Os dados abaixo estavam incompletos no briefing e foram preenchidos com valores padrão realistas. **Confira e ajuste no arquivo `index.html` antes de colocar no ar:**
+```bash
+npm install
+npm run dev
+```
 
-1. **WhatsApp**: o campo de WhatsApp veio vazio, então usei o telefone do perfil do Google — `(11) 95696-6643` — convertido para o formato internacional `5511956966643`. Se o número de WhatsApp for diferente do telefone do Google, troque a constante `WHATSAPP_NUMBER` no final do `index.html` (dentro da tag `<script>`).
-2. **Horário de funcionamento**: o Google Perfil só informava "Fechado · Abre seg. às 09:00". Preenchi o rodapé com "Seg. a Sex., 09h às 18h" como estimativa. Ajuste para o horário real no rodapé (`<footer>`).
-3. **Depoimentos**: os 3 depoimentos da seção "Prova Social" são fictícios e verossímeis para o segmento (artesanato/enxoval/naninha), já que nenhum depoimento real foi enviado. Assim que tiver avaliações reais dos clientes, substitua os textos e nomes.
-4. **Instagram**: não foi informado — nenhum link de Instagram foi incluído no site. Se quiser, posso adicionar depois.
-5. **Foto/logo real**: o hero usa um bloco ilustrativo (ícone + frase), pois nenhuma imagem foi enviada. Recomendo substituir por fotos reais das peças assim que possível — é o que mais aumenta a conversão nesse tipo de negócio.
+## 🚀 Deploy no GitHub Pages
+
+1. Instale as dependências:
+
+```bash
+npm install
+```
+
+2. Atualize o `package.json` com a sua URL do GitHub Pages:
+
+```json
+{
+  "homepage": "https://SEU_USERNAME.github.io/SEU_REPOSITORIO"
+}
+```
+
+3. Faça o build:
+
+```bash
+npm run build
+```
+
+4. Deploy:
+
+```bash
+npm run deploy
+```
+
+5. Configure o GitHub Pages:
+   - Vá em **Settings > Pages**
+   - Source: **Deploy from branch**
+   - Branch: **gh-pages**
+   - Folder: **/ (root)**
 
 ## 📁 Estrutura
 
 ```
-atelie-di-petta/
-├── index.html     ← página completa (HTML + CSS + JS em um único arquivo)
-└── README.md       ← este arquivo
+src/
+├── components/
+│   ├── ui/          # Button, Card, Badge, Container, Section, Title,
+│   │                #   Input, Modal, Tooltip, Spinner, Toast, ProgressBar
+│   ├── layout/       # Header, Footer, Sidebar, Navigation
+│   └── features/     # Hero, Features, About, Stats, Pricing,
+│                      #   Testimonials, FAQ, Contact
+├── hooks/            # useTheme, useLocalStorage, useMediaQuery,
+│                      #   useScrollPosition, useOnScreen
+├── context/          # ThemeContext, AppContext
+├── utils/            # helpers.js, constants.js
+├── styles/           # variables.css, global.css, animations.css
+├── pages/            # HomePage.jsx, ComponentsShowcase.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
-## 🚀 Como publicar no GitHub (passo a passo)
+Cada componente em `ui/` segue o padrão:
 
-### 1. Crie um repositório no GitHub
-- Acesse [github.com/new](https://github.com/new)
-- Dê um nome, por exemplo `atelie-di-petta`
-- Deixe como **Público** (necessário para o GitHub Pages gratuito)
-- Não marque "Add a README" (você já tem um)
-- Clique em **Create repository**
+```
+Button/
+├── Button.jsx          # componente + PropTypes + JSDoc
+├── Button.module.css   # estilos com escopo local
+└── index.js             # export { default } from "./Button"
+```
 
-### 2. Suba os arquivos
-**Opção A — pelo navegador (mais simples):**
-- Na página do repositório recém-criado, clique em **"uploading an existing file"**
-- Arraste os arquivos `index.html` e `README.md` (extraídos deste zip)
-- Clique em **Commit changes**
+## 🧩 Componentes de UI
 
-**Opção B — pelo terminal (git):**
+| Componente | Recursos |
+|---|---|
+| `Button` | variantes (primary/secondary/outline/ghost), tamanhos, loading, ícones, fullWidth |
+| `Card` | header/body/footer, hover, 4 níveis de elevação |
+| `Badge` | variantes de cor, contador, dismissible |
+| `Container` | responsivo, max-width configurável (sm/md/lg/xl/full) |
+| `Section` | padding configurável, variantes de background |
+| `Title` | subtitle, alignment, texto em gradiente |
+| `Input` | label, estado de erro, helper text, ícones |
+| `Modal` | backdrop, animações, fecha com Esc |
+| `Tooltip` | 4 direções (top/bottom/left/right) |
+| `Spinner` | tamanhos e cores diferentes |
+
+## ✨ Funcionalidades incluídas
+
+- Dark/Light mode com persistência em `localStorage`
+- Smooth scroll para navegação interna
+- Contadores animados (Stats) disparados por Intersection Observer
+- Animações de entrada ao rolar a página (`data-reveal`)
+- Header sticky com efeito de blur
+- Menu mobile com animação de slide
+- Validação de formulário com feedback visual (Contact)
+- Notificações toast
+- Carrossel de depoimentos com autoplay
+- Barra de progresso de leitura no topo da página
+- Acordeão de FAQ com expand/collapse animado
+
+## 🎨 Customização
+
+Edite `src/styles/variables.css` para mudar cores, fontes e espaçamentos —
+tudo é controlado por CSS Custom Properties, incluindo o tema claro/escuro
+(`[data-theme="light"]`).
+
+## 📦 Build
+
 ```bash
-git init
-git add index.html README.md
-git commit -m "Primeira versão da landing page"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/atelie-di-petta.git
-git push -u origin main
+npm run build
 ```
 
-### 3. Ative o GitHub Pages (para deixar o site no ar gratuitamente)
-- No repositório, vá em **Settings → Pages**
-- Em "Source", selecione a branch **main** e a pasta **/ (root)**
-- Clique em **Save**
-- Aguarde 1–2 minutos. O site ficará disponível em:
-  `https://SEU-USUARIO.github.io/atelie-di-petta/`
-
-### 4. (Opcional) Domínio próprio
-Se quiser usar um domínio como `www.atelieDiPetta.com.br`:
-- Compre o domínio em um registrador (Registro.br, GoDaddy, etc.)
-- Em **Settings → Pages → Custom domain**, digite o domínio
-- No painel do seu domínio, crie um registro **CNAME** apontando para `SEU-USUARIO.github.io`
-
-## ✏️ Como editar depois
-
-Todo o conteúdo (textos, número de WhatsApp, endereço, cores) está no único arquivo `index.html`, dividido em seções comentadas:
-`HERO`, `DIFERENCIAIS`, `SOBRE`, `SERVIÇOS`, `PROVA SOCIAL`, `CTA FINAL`, `FOOTER`.
-
-Basta abrir o arquivo em qualquer editor de texto (ou direto no GitHub, clicando no lápis ✏️ do arquivo) e editar o texto entre as tags HTML.
-=======
-
->>>>>>> 5f20f7853fa2b258919f12f2c7e0e194c65c65ef
-=======
-# AtelieDipetta
-Website de artesanato focado em peças de crochet
-# AtelieDipetta
->>>>>>> 4be0646aefbbf1b2024b8020061126796423b617
+O build final é gerado na pasta `dist/`.

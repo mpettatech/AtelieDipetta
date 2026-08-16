@@ -1,0 +1,71 @@
+.grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.imageWrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(
+    150deg,
+    var(--color-bg-elevated-2),
+    var(--color-bg-elevated)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.worldGrid {
+  width: 80%;
+  height: 80%;
+}
+
+.gridLine {
+  stroke: var(--color-border-strong);
+  stroke-width: 1;
+}
+
+.gridDot {
+  fill: var(--color-accent);
+}
+
+.body {
+  color: var(--color-text-muted);
+  line-height: var(--lh-normal);
+  margin-top: var(--space-4);
+}
+
+.body + .body {
+  margin-top: var(--space-3);
+}
+
+.statRow {
+  display: flex;
+  gap: var(--space-7);
+  margin-top: var(--space-6);
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  color: var(--color-accent-strong);
+}
+
+.statLabel {
+  font-size: var(--fs-xs);
+  color: var(--color-text-faint);
+  margin-top: var(--space-1);
+}

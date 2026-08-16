@@ -1,0 +1,121 @@
+.header {
+  margin-bottom: var(--space-7);
+}
+
+.carousel {
+  position: relative;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.track {
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform var(--duration-slow) var(--ease-in-out);
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: var(--space-2);
+}
+
+.quote {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-snug);
+  color: var(--color-text);
+}
+
+.quote::before {
+  content: "\201C";
+  color: var(--color-accent);
+}
+.quote::after {
+  content: "\201D";
+  color: var(--color-accent);
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    145deg,
+    var(--color-accent),
+    var(--color-secondary)
+  );
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+}
+
+.name {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-sm);
+}
+
+.role {
+  font-size: var(--fs-xs);
+  color: var(--color-text-faint);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.navButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-border-strong);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.dotActive {
+  background: var(--color-accent);
+  transform: scale(1.3);
+}
