@@ -8,36 +8,72 @@
  */
 
 :root {
-  /* ---------- Color: dark theme (default) ---------- */
-  --color-bg: #14162b;
-  --color-bg-elevated: #1b1e3a;
-  --color-bg-elevated-2: #232752;
-  --color-border: #2e3260;
-  --color-border-strong: #3f447f;
+  /* =========================================================
+     PALETA — ATELIÊ DI PETTA
+     Inspirada na identidade visual da imagem:
+     off-white + rosa antigo + rosé + champagne + bege
+     ========================================================= */
 
-  --color-text: #f5f3ee;
-  --color-text-muted: #9c9ab8;
-  --color-text-faint: #6e6c94;
+  --color-bg: #fffaf8;
+  --color-bg-elevated: #ffffff;
+  --color-bg-elevated-2: #fdf0ef;
 
-  --color-accent: #f2a65a;
-  --color-accent-strong: #f6bb7d;
-  --color-accent-contrast: #14162b;
-
-  --color-secondary: #6c63ac;
-  --color-secondary-strong: #8a81cc;
-
-  --color-success: #4fb6a4;
-  --color-danger: #e0705f;
-  --color-warning: #f2c14e;
-
-  --color-overlay: rgba(10, 11, 22, 0.72);
-  --color-focus-ring: #f2a65a;
+  --color-border: #efd9d5;
+  --color-border-strong: #d9aaa5;
 
   /* ---------- Typography ---------- */
-  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+
+  --color-text: #6f4b4b;
+  --color-text-muted: #9a7474;
+  --color-text-faint: #c8a9a5;
+
+  /* Rosa principal da marca */
+  --color-accent: #c98589;
+  --color-accent-strong: #b86f75;
+  --color-accent-contrast: #ffffff;
+
+  /* Champagne / dourado decorativo */
+  --color-secondary: #d9b98c;
+  --color-secondary-strong: #c9a36e;
+
+  /* ---------- Estados ---------- */
+
+  --color-success: #91ad91;
+  --color-danger: #c87878;
+  --color-warning: #d9b46d;
+
+  /* ---------- Overlay ---------- */
+
+  --color-overlay: rgba(111, 75, 75, 0.45);
+
+  /* ---------- Focus ---------- */
+
+  --color-focus-ring: #c98589;
+
+
+  /* =========================================================
+     TIPOGRAFIA
+     ========================================================= */
+
+  --font-display: "Cormorant Garamond",
+    "Playfair Display",
+    "Iowan Old Style",
+    "Palatino Linotype",
+    serif;
+
+  --font-body: "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
     sans-serif;
-  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --font-mono: "JetBrains Mono",
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+
+  /* ---------- Font Sizes ---------- */
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
@@ -49,16 +85,26 @@
   --fs-3xl: 3rem;
   --fs-4xl: 3.75rem;
 
+
+  /* ---------- Line Height ---------- */
+
   --lh-tight: 1.1;
   --lh-snug: 1.3;
   --lh-normal: 1.6;
+
+
+  /* ---------- Font Weight ---------- */
 
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
 
-  /* ---------- Spacing scale ---------- */
+
+  /* =========================================================
+     ESPAÇAMENTO
+     ========================================================= */
+
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -70,32 +116,62 @@
   --space-9: 6rem;
   --space-10: 8rem;
 
-  /* ---------- Layout ---------- */
+
+  /* =========================================================
+     LAYOUT
+     ========================================================= */
+
   --container-sm: 640px;
   --container-md: 860px;
   --container-lg: 1120px;
   --container-xl: 1320px;
 
-  /* ---------- Radius & elevation ---------- */
+
+  /* =========================================================
+     BORDAS
+     ========================================================= */
+
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
   --radius-pill: 999px;
 
-  --shadow-sm: 0 1px 2px rgba(6, 7, 18, 0.4);
-  --shadow-md: 0 8px 24px rgba(6, 7, 18, 0.35);
-  --shadow-lg: 0 20px 48px rgba(6, 7, 18, 0.45);
-  --shadow-glow: 0 0 0 1px rgba(242, 166, 90, 0.25),
-    0 8px 32px rgba(242, 166, 90, 0.12);
 
-  /* ---------- Motion ---------- */
+  /* =========================================================
+     SOMBRAS
+     ========================================================= */
+
+  --shadow-sm:
+    0 1px 3px rgba(111, 75, 75, 0.08);
+
+  --shadow-md:
+    0 8px 24px rgba(111, 75, 75, 0.10);
+
+  --shadow-lg:
+    0 20px 48px rgba(111, 75, 75, 0.13);
+
+  /* Glow rosé */
+  --shadow-glow:
+    0 0 0 1px rgba(201, 133, 137, 0.18),
+    0 8px 32px rgba(201, 133, 137, 0.15);
+
+
+  /* =========================================================
+     MOTION
+     ========================================================= */
+
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
   --duration-fast: 150ms;
   --duration-base: 250ms;
   --duration-slow: 500ms;
 
-  /* ---------- Z-index scale ---------- */
+
+  /* =========================================================
+     Z-INDEX
+     ========================================================= */
+
   --z-dropdown: 100;
   --z-sticky: 200;
   --z-modal-backdrop: 300;
@@ -104,34 +180,51 @@
   --z-toast: 500;
 }
 
-/**
- * Light theme overrides — applied via [data-theme="light"] on <html>.
- * Kept in the same warm/indigo family so the brand still reads as
- * "Meridian" rather than swapping to a generic light template.
- */
+
+/* =========================================================
+   LIGHT THEME
+   A identidade do Ateliê já é essencialmente clara,
+   então o tema light reforça a mesma linguagem visual.
+   ========================================================= */
+
 [data-theme="light"] {
-  --color-bg: #f7f5f0;
+
+  --color-bg: #fffaf8;
   --color-bg-elevated: #ffffff;
-  --color-bg-elevated-2: #efece3;
-  --color-border: #e2ded2;
-  --color-border-strong: #cfc9b8;
+  --color-bg-elevated-2: #fdf0ef;
 
-  --color-text: #1c1d2e;
-  --color-text-muted: #56546f;
-  --color-text-faint: #86849e;
+  --color-border: #efd9d5;
+  --color-border-strong: #d9aaa5;
 
-  --color-accent: #d9822b;
-  --color-accent-strong: #b96a1c;
+  --color-text: #6f4b4b;
+  --color-text-muted: #9a7474;
+  --color-text-faint: #c8a9a5;
+
+  --color-accent: #c98589;
+  --color-accent-strong: #b86f75;
   --color-accent-contrast: #ffffff;
 
-  --color-secondary: #5a51a0;
-  --color-secondary-strong: #443b8a;
+  --color-secondary: #d9b98c;
+  --color-secondary-strong: #c9a36e;
 
-  --color-overlay: rgba(28, 29, 46, 0.55);
+  --color-success: #91ad91;
+  --color-danger: #c87878;
+  --color-warning: #d9b46d;
 
-  --shadow-sm: 0 1px 2px rgba(28, 29, 46, 0.08);
-  --shadow-md: 0 8px 24px rgba(28, 29, 46, 0.1);
-  --shadow-lg: 0 20px 48px rgba(28, 29, 46, 0.14);
-  --shadow-glow: 0 0 0 1px rgba(217, 130, 43, 0.2),
-    0 8px 32px rgba(217, 130, 43, 0.14);
+  --color-overlay: rgba(111, 75, 75, 0.35);
+
+  --color-focus-ring: #c98589;
+
+  --shadow-sm:
+    0 1px 3px rgba(111, 75, 75, 0.06);
+
+  --shadow-md:
+    0 8px 24px rgba(111, 75, 75, 0.08);
+
+  --shadow-lg:
+    0 20px 48px rgba(111, 75, 75, 0.11);
+
+  --shadow-glow:
+    0 0 0 1px rgba(201, 133, 137, 0.16),
+    0 8px 32px rgba(201, 133, 137, 0.12);
 }
