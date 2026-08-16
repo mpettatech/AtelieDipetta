@@ -9,8 +9,8 @@ import styles from "./Title.module.css";
  * @example
  * <Title
  *   as="h2"
- *   eyebrow="Why Ateliê Di Petta"
- *   subtitle="Every teammate sees the same overlap, in their own local time."
+ *   eyebrow="Por quê escolher o Ateliê Di Petta?"
+ *   subtitle="Simples: Produtos de qualidade e únicos ."
  *   align="center"
  *   gradient
  * >

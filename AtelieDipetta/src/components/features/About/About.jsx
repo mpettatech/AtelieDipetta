@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 import Container from "../../ui/Container";
 import Section from "../../ui/Section";
 import Title from "../../ui/Title";
-
+import { Star } from "lucide-react";
 /**
  * About — company/product story section with an illustrative graphic
  * on one side and copy + supporting stats on the other.
@@ -46,33 +46,22 @@ function About() {
           </div>
 
           <div>
-            <Title eyebrow="Our story" size="lg">
-              Built by a team that was tired of "does 9am work for you?"
+            <Title eyebrow="Nossa história" size="lg">
+              Feito à mão com carinho e dedicação
             </Title>
             <p className={styles.body}>
-              Ateliê Di Petta started in 2022 inside a four-person team spread across
-              San Francisco, Berlin, and Singapore. Every planning conversation
-              began with someone converting timezones by hand — and someone
-              always got the 11pm call.
+              Ateliê Di Petta é uma marca focada na produção de peças e mimos artesanais em crochê.
+              Cada item é feito inteiramente à mão, visando entregar qualidade e afeto em forma de 
+              acessórios e decorações.
             </p>
-            <p className={styles.body}>
-              Today Ateliê Di Petta coordinates working hours for distributed teams
-              at companies of every size, from five-person startups to
-              enterprise engineering orgs spanning a dozen countries.
-            </p>
-
             <div className={styles.statRow}>
               <div>
-                <div className={styles.statNumber}>1,200+</div>
-                <div className={styles.statLabel}>teams onboarded</div>
+                <div className={styles.statNumber}>+ de 1500 peças feitas</div>
+                <div className={styles.statLabel}>+ de 100 receitas próprias</div>
               </div>
               <div>
-                <div className={styles.statNumber}>38</div>
-                <div className={styles.statLabel}>countries represented</div>
-              </div>
-              <div>
-                <div className={styles.statNumber}>4.9/5</div>
-                <div className={styles.statLabel}>average team rating</div>
+                <div className={styles.statNumber}>+ de 100</div>
+                <div className={styles.statLabel}>participações em eventos</div>
               </div>
             </div>
           </div>
