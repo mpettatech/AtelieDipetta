@@ -61,4 +61,3 @@ export default function Products() {
   );
 }
 
-export default PRODUCTS;

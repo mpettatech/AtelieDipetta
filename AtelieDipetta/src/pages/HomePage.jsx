@@ -2,7 +2,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import Sidebar from "../components/layout/Sidebar";
 import Hero from "../components/features/Hero";
-import Features from "../components/features/Features";
+import Products from "../components/features/Products";
 import About from "../components/features/About";
 import Stats from "../components/features/Stats";
 import Pricing from "../components/features/Pricing";
@@ -27,7 +27,7 @@ function HomePage() {
       <Header />
       <main>
         <Hero />
-        <Features />
+        <Products/>
         <About />
         <Stats />
         <Pricing />
