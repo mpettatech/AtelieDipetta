@@ -4,7 +4,6 @@ import Container from "../../ui/Container";
 import Button from "../../ui/Button";
 import Badge from "../../ui/Badge";
 import { scrollToId } from "../../../utils/helpers";
-import heroImage from "../../../assets/hero-image.png";
 
 function Hero() {
   return (
@@ -51,7 +50,7 @@ function Hero() {
 
           <div className={styles.heroImageWrap}>
             <img
-              src={heroImage}
+              src="/hero.png"
               alt="Ateliê Di Petta - acessórios artesanais"
               className={styles.heroImage}
             />
