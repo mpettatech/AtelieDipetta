@@ -6,22 +6,37 @@ import Title from "../../ui/Title";
 import Card from "../../ui/Card";
 import useOnScreen from "../../../hooks/useOnScreen";
 
+// Importa todas as imagens da pasta de uma vez, com URL já resolvida
+const productImages = import.meta.glob("../../Produtos/*.{jpg,jpeg,png,webp}", {
+  eager: true,
+  import: "default",
+});
+
+// Helper: pega a imagem pelo nome do arquivo (sem precisar saber o caminho completo)
+function getImage(filename) {
+  const match = Object.entries(productImages).find(([path]) =>
+    path.endsWith(`/${filename}`)
+  );
+  return match ? match[1] : null;
+}
+
+
 const PRODUCTS = [
-  {
-    image: "/images/products/produto-1.jpg",
-    title: "Nome do produto",
+ {
+    image: getImage("brincoArgola.jpg"),
+    title: "Brinco Argola",
     price: "R$ 129,90",
     body: "Descrição curta e direta destacando o principal benefício do produto.",
     href: "/produtos/produto-1",
-    badge: "Novo", // opcional
+    badge: "Novo",
   },
   {
-    image: "/images/products/produto-2.jpg",
-    title: "Nome do produto",
+    image: getImage("colar-prata.jpg"),
+    title: "Colar Prata",
     price: "R$ 89,90",
     body: "Descrição curta e direta destacando o principal benefício do produto.",
     href: "/produtos/produto-2",
-  },
+  }
   // ...restante dos produtos
 ];
 
