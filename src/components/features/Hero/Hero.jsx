@@ -50,7 +50,7 @@ function Hero() {
 
           <div className={styles.heroImageWrap}>
             <img
-              src="/hero.png"
+              src="./hero.png"
               alt="Ateliê Di Petta - acessórios artesanais"
               className={styles.heroImage}
             />
