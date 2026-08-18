@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
+}
+
+/* ---------- Elevation levels ---------- */
+.elevation-0 {
+  box-shadow: none;
+}
+.elevation-1 {
+  box-shadow: var(--shadow-sm);
+}
+.elevation-2 {
+  box-shadow: var(--shadow-md);
+}
+.elevation-3 {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---------- Hover interaction ---------- */
+.hoverable:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.header {
+  padding: var(--space-5) var(--space-5) 0;
+}
+
+.body {
+  padding: var(--space-5);
+  flex: 1;
+}
+
+.footer {
+  padding: 0 var(--space-5) var(--space-5);
+  margin-top: auto;
+}
+
+.divided .header {
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-4);
+}
+
+.divided .footer {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-4);
+}

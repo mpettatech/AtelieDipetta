@@ -1,0 +1,45 @@
+.section {
+  position: relative;
+}
+
+/* ---------- Padding scale ---------- */
+.padding-none {
+  padding-block: 0;
+}
+.padding-sm {
+  padding-block: var(--space-7);
+}
+.padding-md {
+  padding-block: var(--space-8);
+}
+.padding-lg {
+  padding-block: var(--space-9);
+}
+
+/* ---------- Background variants ---------- */
+.bg-base {
+  background-color: var(--color-bg);
+}
+.bg-elevated {
+  background-color: var(--color-bg-elevated);
+}
+.bg-gradient {
+  background: radial-gradient(
+      circle at 15% 0%,
+      rgba(242, 166, 90, 0.14),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(108, 99, 172, 0.18),
+      transparent 50%
+    ),
+    var(--color-bg);
+}
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bordered {
+  border-top: 1px solid var(--color-border);
+}
