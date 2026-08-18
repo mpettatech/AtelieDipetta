@@ -27,7 +27,7 @@ const PRODUCTS = [
     title: "Brinco Argola",
     price: "R$ 129,90",
     body: "Descrição curta e direta destacando o principal benefício do produto.",
-    href: "/produtos/produto-1",
+    href: "#contact",
     badge: "Novo",
   },
   {
@@ -35,7 +35,7 @@ const PRODUCTS = [
     title: "Colar Prata",
     price: "R$ 89,90",
     body: "Descrição curta e direta destacando o principal benefício do produto.",
-    href: "/produtos/produto-2",
+    href: "#contact",
   }
   // ...restante dos produtos
 ];
