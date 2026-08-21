@@ -32,7 +32,7 @@ function Footer() {
             </span>
 
             <p className={styles.tagline}>
-              Artesanato feito com carinho, cuidado e atenção a cada detalhe.
+              Entre em contato no WhatsApp ou Instagram 👇
             </p>
 
             <div className={styles.socialRow}>
