@@ -7,31 +7,29 @@ import Title from "../../ui/Title";
 const TESTIMONIALS = [
   {
     quote:
-      "We went from a shared spreadsheet nobody trusted to a single view everyone checks before booking anything. Onboarding took an afternoon.",
-    name: "Priya Nair",
-    role: "Engineering Manager, Latchkey",
+      "Obrigada pelo carinho, eu Amei!!! ❤",
+    name: "Isomar",
+    photo: "/isomar.png",
   },
   {
     quote:
-      "Ateliê Di Petta is the first tool that actually understands our team isn't just US and Europe — it handles Singapore and São Paulo just as well.",
-    name: "Diego Ferreira",
-    role: "Head of Remote Ops, Fenwick",
+      "Os brincos são o charme e destaque. Perfeição que só tem no @ateliedipetta 🥰",
+    name: "Camila",
+    photo: "/camila.png",
   },
   {
     quote:
-      "The fair-rotation suggestion alone fixed a year of the same three people staying up late for standup.",
-    name: "Amara Osei",
-    role: "VP Engineering, Northlight",
+      "Produto lindo e feito com muito carinho ❤",
+    name: "Cristiane",
+    photo: "/cristiane.png",
+  },
+  {quote:
+      "Os melhores brincos que já tive! ❤",
+    name: "Edileuza",
+    photo: "/edileuza.png",
   },
 ];
 
-/**
- * Testimonials — auto-advancing quote carousel with manual arrow and
- * dot navigation.
- *
- * @example
- * <Testimonials />
- */
 function Testimonials() {
   const [index, setIndex] = useState(0);
 
@@ -39,19 +37,16 @@ function Testimonials() {
     const id = setInterval(() => {
       setIndex((current) => (current + 1) % TESTIMONIALS.length);
     }, 6000);
+
     return () => clearInterval(id);
   }, []);
-
-  const goTo = (nextIndex) => {
-    setIndex((nextIndex + TESTIMONIALS.length) % TESTIMONIALS.length);
-  };
 
   return (
     <Section id="testimonials" padding="lg">
       <Container size="md">
         <div className={styles.header}>
-          <Title align="center" eyebrow="From the teams using it">
-            Trusted by distributed teams
+          <Title align="center" eyebrow="Quem já conhece nosso trabalho">
+            O que nossas clientes dizem
           </Title>
         </div>
 
@@ -59,62 +54,43 @@ function Testimonials() {
           <div className={styles.track}>
             <div
               className={styles.slides}
-              style={{ transform: `translateX(-${index * 100}%)` }}
+              style={{
+                transform: `translateX(-${index * 100}%)`,
+              }}
             >
               {TESTIMONIALS.map((testimonial) => (
                 <div className={styles.slide} key={testimonial.name}>
-                  <p className={styles.quote}>{testimonial.quote}</p>
-                  <div className={styles.attribution}>
-                    <span className={styles.avatar} aria-hidden="true">
-                      {testimonial.name
-                        .split(" ")
-                        .map((part) => part[0])
-                        .join("")}
-                    </span>
-                    <div>
-                      <div className={styles.name}>{testimonial.name}</div>
-                      <div className={styles.role}>{testimonial.role}</div>
-                    </div>
+                  <img
+                    src={testimonial.photo}
+                    alt={`Foto de ${testimonial.name}`}
+                    className={styles.photo}
+                  />
+
+                  <p className={styles.quote}>
+                    “{testimonial.quote}”
+                  </p>
+
+                  <div className={styles.name}>
+                    {testimonial.name}
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className={styles.controls}>
-            <button
-              type="button"
-              className={styles.navButton}
-              onClick={() => goTo(index - 1)}
-              aria-label="Previous testimonial"
-            >
-              ‹
-            </button>
-            <div className={styles.dots}>
-              {TESTIMONIALS.map((testimonial, dotIndex) => (
-                <button
-                  key={testimonial.name}
-                  type="button"
-                  className={[
-                    styles.dot,
-                    dotIndex === index ? styles.dotActive : "",
-                  ]
-                    .filter(Boolean)
-                    .join(" ")}
-                  onClick={() => goTo(dotIndex)}
-                  aria-label={`Go to testimonial ${dotIndex + 1}`}
-                  aria-current={dotIndex === index}
-                />
-              ))}
-            </div>
-            <button
-              type="button"
-              className={styles.navButton}
-              onClick={() => goTo(index + 1)}
-              aria-label="Next testimonial"
-            >
-              ›
-            </button>
+          <div className={styles.dots}>
+            {TESTIMONIALS.map((testimonial, dotIndex) => (
+              <button
+                key={testimonial.name}
+                type="button"
+                className={`${styles.dot} ${
+                  dotIndex === index ? styles.dotActive : ""
+                }`}
+                onClick={() => setIndex(dotIndex)}
+                aria-label={`Ver depoimento ${dotIndex + 1}`}
+                aria-current={dotIndex === index}
+              />
+            ))}
           </div>
         </div>
       </Container>

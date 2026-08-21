@@ -73,26 +73,25 @@ export const PRICING_TIERS = [
 export const FAQ_ITEMS = [
   {
     id: "faq-1",
-    question: "How does Ateliê Di Petta find overlapping hours?",
+    question: "Que tipo de material Ateliê Di Petta utiliza para criar seus produtos?",
     answer:
-      "Every teammate sets their working hours once. Ateliê Di Petta cross-references them live and highlights the windows where everyone is online, updating automatically for daylight saving shifts.",
+      "Usamos materiais de alta qualidade 100% algodão, sendo antialérgicos e hipoalergênicos, garantindo conforto e segurança para todos os nossos clientes.",
   },
   {
     id: "faq-2",
-    question: "Does it work with our existing calendar?",
+    question: "Posso efetuar a compra pelo Site?",
     answer:
-      "Yes. Ateliê Di Petta syncs one-way or two-way with Google Calendar and Outlook, so suggested meeting times can be booked without leaving your usual tools.",
+      "Atualmente não é possível realizar compras diretamente pelo site. Para adquirir nossos produtos, entre em contato conosco através do WhatsApp ou Instagram, atente-se aos contatos oficiais, presentes no site.",
   },
   {
     id: "faq-3",
-    question: "Can I try it before paying?",
-    answer:
-      "The Team plan includes a 14-day free trial with no card required. The Starter plan is free indefinitely for small teams.",
+    question: "Os produtos são a pronta entrega ou sob encomenda?",
+    answer: "Temos alguns produtos a pronta entrega, sujeito a consultar o estoque. Alguns produtos somente sob encomenda"
   },
   {
     id: "faq-4",
-    question: "What happens when someone travels?",
+    question: "Existe loja física? Faz entregas em todo o Brasil?",
     answer:
-      "Teammates can set a temporary timezone for travel. Ateliê Di Petta recalculates overlap for everyone else automatically and reverts once the trip ends.",
+      "Não possuímos loja física no momento, mas entregamos em todo o Brasil. Acompanhe nosso instagram para ficar por dentro quando houver um evento com nossa presença",
   },
 ];
