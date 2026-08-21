@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import Container from "../../ui/Container";
-import { SITE_NAME, SOCIAL_LINKS, NAV_LINKS } from "../../../utils/constants";
+import {SITE_NAME, NAV_LINKS} from "../../../utils/constants";
 import {
   Camera,
   MessageCircle,
 } from "lucide-react";
 
-const SOCIAL_LINK = [
+const SOCIAL_LINKS = [
   {
     label: "Camera",
-    href: "https://instagram.com/seuinstagram",
+    href: "https://www.instagram.com/ateliedipetta/",
     icon: <Camera size={20} strokeWidth={1.8} />,
   },
   {
@@ -75,7 +75,7 @@ function Footer() {
               <a href="#contact">Contato</a>
             </nav>
           </div>
-           <div className={styles.bottomRow}>
+      <div className={styles.bottomRow}>
             <span>
              © {new Date().getFullYear()} {SITE_NAME}. Todos os direitos reservados.
            </span>
@@ -91,7 +91,7 @@ function Footer() {
             </a>
            </span>
          </div>
-        </div>
+    </div>
       </Container>
     </footer>
   );
