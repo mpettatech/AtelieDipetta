@@ -5,6 +5,7 @@ import Button from "../../ui/Button";
 import Badge from "../../ui/Badge";
 import { scrollToId } from "../../../utils/helpers";
 
+
 function Hero() {
   return (
     <section id="top" className={styles.hero}>
@@ -50,7 +51,7 @@ function Hero() {
 
           <div className={styles.heroImageWrap}>
             <img
-              src="/hero.png"
+              src={`${import.meta.env.BASE_URL}hero.png`}
               alt="Ateliê Di Petta - acessórios artesanais"
               className={styles.heroImage}
             />
