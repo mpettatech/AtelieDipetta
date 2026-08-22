@@ -9,7 +9,7 @@ const TESTIMONIALS = [
     quote:
       "Obrigada pelo carinho, eu Amei!!! ❤",
     name: "Isomar",
-    photo: `${import.meta.env.BASE_URL}Isomar.png`,
+    photo: `${import.meta.env.BASE_URL}isomar.png`,
   },
   {
     quote:
