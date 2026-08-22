@@ -70,7 +70,11 @@ function Footer() {
 
             <nav className={styles.linkList} aria-label="Sobre">
               <a href="#sobre">O Ateliê</a>
-              <a href="https://wa.me/5511954401439">Contato</a>
+              <a href="https://wa.me/5511954401439"
+                 target="_blank"
+                 rel="noopener noreferrer"
+              >Contato
+              </a>
             </nav>
           </div>
       <div className={styles.bottomRow}>
