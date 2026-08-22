@@ -6,7 +6,7 @@ import Section from "../../ui/Section";
 const PARTNERS = [
   {
     name: "Tendarte",
-    logo: "/tendarte.jpg",
+    logo: "https://mpettatech.github.io/tendarte.jpg",
     url: "https://www.instagram.com/tendarteartesanato/",
   },
 
