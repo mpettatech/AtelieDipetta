@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/5511999999999",
+    href: "https://wa.me/5511954401439",
     icon: <MessageCircle size={20} strokeWidth={1.8} />,
   },
 ];
@@ -69,10 +69,8 @@ function Footer() {
             <p className={styles.colTitle}>Sobre</p>
 
             <nav className={styles.linkList} aria-label="Sobre">
-              <a href="#about">O Ateliê</a>
-              <a href="#partners">Parceiros</a>
-              <a href="#testimonials">Depoimentos</a>
-              <a href="#contact">Contato</a>
+              <a href="#sobre">O Ateliê</a>
+              <a href="https://wa.me/5511954401439">Contato</a>
             </nav>
           </div>
       <div className={styles.bottomRow}>

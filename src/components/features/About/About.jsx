@@ -14,7 +14,7 @@ import sobreImage from "./sobre.jpg";
  */
 function About() {
   return (
-    <Section padding="lg" background="elevated" bordered>
+    <Section id="sobre" padding="lg" background="elevated" bordered>
       <Container size="xl">
         <div className={styles.grid}>
           <div className={styles.imageWrap}>

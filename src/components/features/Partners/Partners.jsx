@@ -27,7 +27,7 @@ const PARTNERS = [
 function Partners() {
   return (
     <>
-      <Section>
+      <Section id="partners" padding="lg">
         <Container>
           <h2>Nossos Parceiros</h2>
           <div className={styles.grid}>
