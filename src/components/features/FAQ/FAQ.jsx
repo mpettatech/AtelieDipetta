@@ -24,8 +24,8 @@ function FAQ() {
     <Section id="faq" padding="lg" background="elevated" bordered>
       <Container size="lg">
         <div className={styles.header}>
-          <Title align="center" eyebrow="Questions">
-            Frequently asked questions
+          <Title align="center" eyebrow="Dúvidas">
+            Dúvidas frequentes
           </Title>
         </div>
 

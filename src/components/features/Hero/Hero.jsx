@@ -29,7 +29,7 @@ function Hero() {
             <div className={styles.ctaRow}>
               <Button
                 size="lg"
-                onClick={() => scrollToId("contact")}
+                onClick={() => window.open("https://wa.me/5511954401439", "_blank")}
               >
                 Fale conosco
               </Button>
@@ -37,7 +37,7 @@ function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                onClick={() => scrollToId("features")}
+                onClick={() => scrollToId("produtos")}
               >
                 Nossos Produtos
               </Button>

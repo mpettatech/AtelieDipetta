@@ -53,7 +53,7 @@ function Header() {
               {theme === "dark" ? "☀" : "☾"}
             </button>
             <div className={styles.desktopOnly}>
-              <Button size="sm" onClick={() => scrollToId("contact")}>
+              <Button size="sm" onClick={() => window.open("https://wa.me/5511954401439", "_blank")}>
                 Fale conosco
               </Button>
             </div>

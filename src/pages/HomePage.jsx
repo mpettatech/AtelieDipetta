@@ -4,11 +4,11 @@ import Sidebar from "../components/layout/Sidebar";
 import Hero from "../components/features/Hero";
 import Products from "../components/features/Products";
 import About from "../components/features/About";
-import Stats from "../components/features/Stats";
-import Pricing from "../components/features/Pricing";
+import Stats from "../components/features/Partners";
+//import Pricing from "../components/features/Pricing";
 import Testimonials from "../components/features/Testimonials";
 import FAQ from "../components/features/FAQ";
-import Contact from "../components/features/Contact";
+//import Contact from "../components/features/Contact";
 import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
@@ -29,11 +29,9 @@ function HomePage() {
         <Hero />
         <Products/>
         <About />
-        <Stats />
-        <Pricing />
+        <Stats />       
         <Testimonials />
         <FAQ />
-        <Contact />
       </main>
       <Footer />
       <Sidebar open={isMobileMenuOpen} onClose={closeMobileMenu} />

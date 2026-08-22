@@ -43,6 +43,7 @@ const PRODUCTS = [
 function ProductCard({ image, title, price, body, href, badge }) {
   const [ref, isVisible] = useOnScreen({ threshold: 0.15 });
   return (
+   <Section id="produtos" padding="lg"> 
     <div ref={ref} data-reveal className={isVisible ? "is-visible" : ""}>
       <Card hoverable elevation={1}>
         <a href={href} className={styles.productLink}>
@@ -58,6 +59,7 @@ function ProductCard({ image, title, price, body, href, badge }) {
         </a>
       </Card>
     </div>
+   </Section> 
   );
 }
 
