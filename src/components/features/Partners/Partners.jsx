@@ -13,12 +13,12 @@ const PARTNERS = [
   
   {
     name: "ATEMDO",
-    logo: "/atemdoLogo.png",
+    logo: `${import.meta.env.BASE_URL}atemdoLogo.png`,
     url: "https://www.atemdo.org/",
   },
   {
     name: "Feira Agro de Mulheres",
-    logo: "/agro.jpg",
+    logo: `${import.meta.env.BASE_URL}agro.jpg`,
     url: "https://www.instagram.com/feira_mulheres/",
   },
   
