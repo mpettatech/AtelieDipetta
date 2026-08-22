@@ -9,24 +9,24 @@ const TESTIMONIALS = [
     quote:
       "Obrigada pelo carinho, eu Amei!!! ❤",
     name: "Isomar",
-    photo: "/isomar.png",
+    photo: `${import.meta.env.BASE_URL}Isomar.png`,
   },
   {
     quote:
       "Os brincos são o charme e destaque. Perfeição que só tem no @ateliedipetta 🥰",
     name: "Camila",
-    photo: "/camila.png",
+    photo: `${import.meta.env.BASE_URL}camila.png`,
   },
   {
     quote:
       "Produto lindo e feito com muito carinho ❤",
     name: "Cristiane",
-    photo: "/cristiane.png",
+    photo: `${import.meta.env.BASE_URL}cristiane.png`,
   },
   {quote:
       "Os melhores brincos que já tive! ❤",
     name: "Edileuza",
-    photo: "/edileuza.png",
+    photo: `${import.meta.env.BASE_URL}edileuza.png`,
   },
 ];
 
